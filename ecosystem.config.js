@@ -20,7 +20,7 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: DEPLOY_REPOSITORY,
       path: DEPLOY_PATH,
-      'post-deploy': 'pwd && npm ci && npm run build',
+      'post-deploy': 'pwd && nvm use 14 && npm ci && npm run build',
     },
   },
 };
